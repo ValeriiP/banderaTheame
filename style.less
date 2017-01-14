@@ -1,0 +1,298 @@
+/*COLORS*/
+@headerColor:#e56c69;
+@menuBGcolor: #414141;
+@textColorTitle:#e56c69;
+@textColor:#777;
+
+/*GENERALE STYLES*/
+body {
+	font-family: Arial, San-Serif;
+	font-size: 100%;
+	color:@textColor;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style-type: none;
+}
+* {
+	text-decoration: none;
+}
+p {
+    font-size: 13px;
+    line-height: 1.3em;
+}
+.conteiner {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/*HEADER*/
+.header {
+	padding: 50px 0px 8px 0;
+	background-color: @headerColor;
+}
+.header h1, .header h2 {
+	color: #fff;
+	text-align: center;
+}
+.maimTitleText {
+	padding: 0.2em 1em;
+	border: 4px solid #fff;
+	
+  transition: all 1s;
+  cursor: pointer;
+  &:hover {
+    border-color: @textColor;
+    color: @textColor;
+  }
+
+}
+
+.subTitleText {
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+}
+ 
+ /*---------------MAINMENU NAVIGATION*/
+
+ .page-navigation {
+ 	background-color: @menuBGcolor;
+ 	border-color: #9d9d9d;
+ 	min-height: 64px;
+   li {
+   float: left;
+   width: auto;
+ }
+   a {
+    display: block;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    /* text-transform: uppercase; */
+  }
+ }
+
+
+ .MenuButton {
+	 color:@headerColor;
+ transition: all 0.2s;
+  cursor: pointer;
+  padding: 0 10px;
+  border-left: 2px solid @headerColor;
+   &:last-child {
+     border-right: 2px solid @headerColor;
+   }
+     &:hover {
+     color:#FFF7EA;
+     background-color: @textColor;
+     border-top: 2px solid @headerColor;
+   }
+   &:focus {
+     color:#fff;
+     border-image:none;
+   }
+ }
+/*---------------End MAINMENU NAVIGATION*/
+
+        /*--------------ASIDE NAVIGATIONS*/
+aside {
+  .simpleButton {
+    margin-top: 3px;
+    padding: 5px 5px 5px 15px;
+    margin-right: 2px;
+    border: 3px solid rgba(119, 119, 119, 0.38);
+    line-height: 2.5em;
+    transition: all 0.2s;
+    &:hover {
+      margin-right: 0px;
+      .dableChevron-right {
+        color: @headerColor;
+      }
+      }
+    }
+  }
+
+.dableChevron-right {
+  padding-left: 25px;
+  font-size: 2em;
+  color: #ffffff;
+
+
+}
+        /*--------------End ASIDE NAVIGATIONS*/
+
+/*BUTTONS*/
+ .LongButton{
+	 background-color: @menuBGcolor;
+    line-height: 0.5em;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    min-width: 100px;
+	border-left:none;
+	border-right:none;
+    border-top: 2px solid @headerColor;
+    border-bottom: 5px solid @headerColor;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding: 0 10px;
+    padding: 0 10px;
+   & a {
+     text-decoration:none;
+     color: inherit;
+   }
+   &:hover {
+     color:@headerColor;
+     background-color:@textColor;
+     border-top: 5px solid  @headerColor;
+     border-bottom: 2px solid  @headerColor;
+
+   }
+ }
+ .simpleButton {
+   margin-right: 3em;
+   min-height: 40px;
+   padding: 5px 15px;
+   border: none;
+   border-radius: 0px;
+   background-color: @headerColor;
+   color: #ffffff;
+   font-weight: bold;
+   transition: all 0.2s;
+   cursor: pointer;
+   &:hover {
+     background-color: @textColor;
+     color: @headerColor;
+   }
+   &:focus {
+     color: #ffffff;
+     border: none;
+     border-radius: 0;
+     border-image: none;
+   }
+   & a {
+     text-decoration: none;
+     color: #fff;
+   }
+ }
+
+ /*LOGIN FORM*/
+ .login {
+ 	padding: 15px 0;
+ 	float: right;
+ }
+ .login input[type="text"],
+ .login input[type="password"] {
+ 	height: 40px;
+	padding:5px;
+ 	margin-right: 5px;
+ 	border: 1px solid transparent;
+ 	border-radius: 0px;
+ 	outline: none;
+	font-weight: bold;
+    
+ }
+ .login input[type="submit"] {
+	 margin-right:3em;
+   height: 40px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 0px;
+    background-color: @headerColor;
+    color: #ffffff;
+	font-weight: bold;
+	transition: all 0.2s;
+  cursor: pointer;
+    
+	
+ }
+ .login input[type="submit"]:hover {
+ 	background-color: @textColor;
+ 	color: @headerColor;
+ }
+ .login input[type="submit"]:focus {
+     color:#ffffff;
+ 	border:none;
+	border-radius:0;
+	border-image:none;
+ }
+/* ASIDE */
+aside {
+  left: -100;
+  top: 0;
+  position: fixed;
+  padding: 1em 1em 1em 0;
+  max-width: 250px;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.08);
+  color: #FFFFFF;
+  background-image: none;
+  transition: all 0.2s;
+  &:hover {
+    left:0;
+    padding: 1em 0;
+  }
+  }
+/*   end ASIDE */
+ /*MAIN PART*/
+.colections > div:first-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.colections > div:last-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+ .colections {
+ 	overflow: auto;
+ }
+ .colection-title {
+ 	padding-bottom: 5px;
+ 	border-bottom: 1px solid @textColor;
+ 	font-size: 36px;
+ }
+.colection-title small {
+	color:@textColor;
+	font-size: 70%;
+}
+.colection-item-outer {
+	display: inline-block;
+	float: left;
+	padding: 0 5px;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+.colection-item {
+	border: 1px solid #959595;
+}
+.colection-item img,
+.colection-item video {
+	width: 100%;
+}
+.colection-text {
+	padding: 0 20px 20px 20px;
+}
+.colection-text h3 {
+	color:@headerColor;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.colection-text p {
+    height: 80px;
+    overflow: hidden;
+}
+
+
+.footer {
+    background-color:@headerColor;
+    color:white;
+    padding: 20px 0;
+    margin-top: 30px;
+}
